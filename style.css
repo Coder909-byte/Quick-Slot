@@ -1,0 +1,134 @@
+/* ============================================================
+   PREMIUM DARK THEME: QUICKSLOT
+   ============================================================ */
+
+:root {
+  --bg-dark: #07090e;
+  --panel-dark: #0f172a;
+  --card-bg: #1e293b;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #00e5ff;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+  min-height: 100vh;
+}
+
+/* --- Typography & Gradients --- */
+.qs-title {
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.qs-subtitle {
+  color: var(--text-muted);
+  max-width: 550px;
+  font-size: 1.1rem;
+}
+
+/* --- Hero & Stats Panel --- */
+.qs-panel {
+  background: var(--panel-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.qs-stat {
+  padding: 10px 20px;
+  border-left: 2px solid var(--accent-blue);
+  background: var(--glass);
+}
+
+.qs-stat .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+.qs-stat .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.qs-stat .value-small {
+  font-size: 1rem;
+  color: var(--accent-cyan);
+  font-family: monospace;
+}
+
+/* --- Interactive Elements (Cards) --- */
+.card {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--accent-blue) !important;
+}
+
+.form-control, .form-select {
+  background-color: #0f172a !important;
+  border: 1px solid var(--border-color) !important;
+  color: #fff !important;
+  padding: 12px;
+}
+
+.form-control:focus {
+  border-color: var(--accent-cyan) !important;
+  box-shadow: 0 0 0 3px rgba(0, 229, 255, 0.1) !important;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-blue), #2563eb);
+  border: none;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.btn-outline-primary {
+  color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+}
+
+.btn-outline-primary:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-dark);
+}
+
+/* --- Live Slots Grid --- */
+.slot-pill {
+  background: linear-gradient(90deg, rgba(59,130,246,0.06), rgba(0,229,255,0.03));
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+};
